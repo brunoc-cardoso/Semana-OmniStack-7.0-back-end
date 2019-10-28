@@ -10,6 +10,7 @@ mongoose.connect('mongodb+srv://omnistack:omnistack@omnistack9-le6dz.mongodb.net
 });
 
 app.use(express.json());
+app.use(require('./routes'));
 
 app.listen(port);
 console.log(`Application running on the door ${port}`);
